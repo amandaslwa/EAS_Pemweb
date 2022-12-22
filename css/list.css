@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+.formContainer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    background-color: white;
+    border-radius: 20px;
+    height: auto;
+    padding: 50px;
+    margin-bottom: 50px;
+    font-family: Poppins;
+    border-style: solid;
+    border-color: #465EA6;
+    border-width: 3px;
+  }  
+
+h1 {
+    text-align: center;
+    font-family: Poppins;
+    font-weight: bolder;
+    color: white;
+  }
+  
+h3 {
+    text-align: center;
+    font-family: Poppins;
+    font-weight: bolder;
+    color: #465EA6;
+  }
+  
+h2 {
+    text-align: center;
+    font-family: Poppins;
+    font-weight: bolder;
+    color: #465EA6;
+  }
+
+h3 {
+    text-align: center;
+    font-family: Poppins;
+    font-weight: bolder;
+    color: #465EA6;
+  }
+
+
+header {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p {
+    margin: 5px 0px 15px 0px;
+  }
+  
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/images/background.jfif");
+}
+
+header {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p {
+    margin: 5px 0px 15px 0px;
+  }
+  
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 5px 9px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    box-sizing: border-box;
+    font-family: Poppins;
+  }
+  
+  input[type=submit] {
+    color: white;
+    background-color: #465EA6;
+    border-color: #8DAEF2;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: Poppins;
+  }
+
+  input[type=button] {
+    margin-top: 30px; 
+    background-color: #FC6868;
+    cursor: pointer;
+    font-family: Poppins;
+  }
+
+
+  input[type=button]:hover {
+    color: whitesmoke;
+    background-color: burlywood;
+    border-color: burlywood;  
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 5px 9px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    box-sizing: border-box;
+    font-family: Poppins;
+  }
+  
+  .btn-primary {
+    font-weight: 400;
+    color: whitesmoke;
+    background-color: #465EA6;
+    border-color: #8DAEF2;
+    align-items: center;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 24px;
+    font-family: Poppins;
+    width: 200px;
+  }
+
+
+  input[type=submit]:hover {
+    color: whitesmoke;
+    background-color: burlywood;
+    border-color: burlywood;  
+  }
+
+  
+  .btn-primary:hover {
+    color: whitesmoke;
+    background-color: burlywood;
+    border-color: burlywood;
+  }
+
+  #list {
+    font-family: Poppins;
+    border-collapse: collapse;
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0px;
+    margin-left:  120px;
+  }
+  
+  .buttonn {
+    justify-content: center;
+    display:block;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  #list td, #list th {
+    border: 0px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+#list tr:nth-child(even){background-color: #f2f2f2;}
+  
+#list tr:nth-child(odd){background-color: white;}
+
+#list tr:hover {background-color: #8DAEF2; color: white;}
+
+#list th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #465EA6;
+  color: white;
+}
