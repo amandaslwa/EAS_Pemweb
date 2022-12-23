@@ -6,31 +6,31 @@ error_reporting(0);
  
 session_start();
  
-// if (isset($_SESSION['username'])) {
-//     header("Location: list-pendaftar.php");
-// }
+if (isset($_SESSION['username'])) {
+	header("Location: list-pendaftar.php");
+}
 
-// if (isset($_POST['submit'])) {
-//     $username = $_POST['username'];
-//     $pass = $_POST['pass'];
+if (isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $pass = $_POST['pass'];
  
-//     $sql = "SELECT * FROM admin WHERE Username='$username' AND Password='$pass'";
-//     $result = mysqli_query($connect, $sql);
-//     if ($result->num_rows > 0) {
-//         $row = mysqli_fetch_assoc($result);
-//         $_SESSION['username'] = $row['username'];
-//         header("Location: list-pendaftar.php");
-//     } else {
-//         echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
-//     }
-// }
+    $sql = "SELECT * FROM admin WHERE Username='$username' AND password='$pass'";
+    $result = mysqli_query($connect, $sql);
+    if ($result->num_rows > 0) {
+        $row = mysqli_fetch_assoc($result);
+        $_SESSION['username'] = $row['username'];
+        header("Location: list-pendaftar.php");
+    } else {
+        echo "<script>alert('Username atau password Anda salah. Silahkan coba lagi!')</script>";
+    }
+}
  
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login Admin</title>
+	<title>Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="images/Logo.png"/>
@@ -51,10 +51,10 @@ session_start();
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/background.jfif');">
 			<div class="wrap-login100">
-				<form action="proses-login-admin.php" class="login100-form validate-form" method="POST">
+				<form method="POST" class="login100-form validate-form">
 
 					<span class="login100-form-title p-b-34 p-t-27">
-						Log in as Admin
+						Log in Sebagai Admin
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">

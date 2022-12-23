@@ -1,10 +1,10 @@
 <?php 
  
-session_start();
+ include 'koneksi.php';
+
+ session_start();
  
-if (!isset($_SESSION['username'])) {
-    header("Location: index.php");
-}
+ $username = $_SESSION['username'];
  
 ?>
 
@@ -32,12 +32,12 @@ if (!isset($_SESSION['username'])) {
 	
 	while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
 		echo "<tr>";
-		echo "<td><img src='images/".$data['pasfoto']."' width='100' height='100'></td>";
-		echo "<td>".$data['nik']."</td>";
-		echo "<td>".$data['nama']."</td>";
+		echo "<td><img src='./terupload/".$data['Pasfoto']."' width='100' height='100'></td>";
+		echo "<td>".$data['NIK']."</td>";
+		echo "<td>".$data['Nama']."</td>";
 		echo "<td>".$data['jabatan']."</td>";
-		echo "<td><a href='form-pendaftar.php?nik=".$data['nik']."'>Buka</a></td>";
-		echo "<td><a href='proses-hapus.php?nik=".$data['nik']."'>Hapus</a></td>";
+		echo "<td><a href='form-pendaftar.php?NIK=".$data['NIK']."'>Buka</a></td>";
+		echo "<td><a href='proses-hapus.php?NIK=".$data['NIK']."'>Hapus</a></td>";
 		echo "</tr>";
 	}
 	?>

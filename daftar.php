@@ -5,12 +5,15 @@
   <title>Registrasi</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/Logo.png"/>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/1b5535c903.js" crossorigin="anonymous"></script>
 
 </head>
 <body style="background-image: url('images/background.jfif');">
 <!-- partial:index.partial.html -->
 <!-- multistep form -->
+<i class="fa-solid fa-arrow-left-long fa-2xl fa-white" style="color: #FFFFFF; padding: 25px; padding-top:50px; padding-bottom:0px"></i>
 <form action="./proses-pendaftaran.php" method="POST" id="msform" enctype="multipart/form-data">
   <!-- progressbar -->
   <ul id="progressbar">
@@ -55,8 +58,8 @@
     <input type="text" name="alamat" placeholder="Alamat" />
     <input type="text" name="pendidikan" placeholder="Pendidikan Terakhir" />
     <select name="jabatan" id="jabatan">
-      <option value="staffbudidaya">Staff Perikanan Budidaya</option>
-      <option value="stafftangkap">Staff Perikanan Tangkap</option>
+      <option value="Staff Budidaya">Staff Perikanan Budidaya</option>
+      <option value="Staff Tangkap">Staff Perikanan Tangkap</option>
     </select>
     <input type="button" name="next" class="next action-button" value="Next" />
   </fieldset>
